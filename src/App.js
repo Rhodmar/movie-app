@@ -6,23 +6,22 @@ import MovieList from './MovieList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
-  const [movies,setMovies] = useState([ ]);
+  const [movies2,setMovies2] = useState([ ]);
 
   const getMovieRequest = async () => {
-    const url = 'http://www.omdbapi.com/?s=shrek&apikey=5761f58';
+    const url = 'http://www.omdbapi.com/?s=avengers&apikey=5761f58';
 
     const response = await fetch(url);
     const responseJson = await response.json();
     
-    setMovies(responseJson.Search);
+    setMovies2(responseJson.Search);
   }
 
   useEffect(() => {
     getMovieRequest();
   },[]);
 
-/*const [movies,se
-tMovies] = useState([  
+const [movies,setMovies] = useState([  
 {
   "Title": "Black Panther",
   "Year": "2018",
@@ -112,7 +111,7 @@ tMovies] = useState([
   "Poster": "https://m.media-amazon.com/images/M/MV5BMTY0NTUyMDQwOV5BMl5BanBnXkFtZTgwNjAwMTA0MDE@._V1_SX300.jpg",
   "Price": "270"
 }
-]);*/
+]);
 
   return (
     <div className="App">
@@ -123,7 +122,7 @@ tMovies] = useState([
         <Sidebar/>      
       </div>
       <div >
-        <MovieList movies = {movies}/>
+        <MovieList movies = {movies} movies2 ={movies2} />
       </div>
     </div>
   );

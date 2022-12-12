@@ -103,9 +103,12 @@ movie{
 
 .title2{
   padding-right: 10px;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 .col2{
   color: white;
 }
 
+.movie-price{
+  color: white;
+}
