@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import MovieList from './MovieList';
