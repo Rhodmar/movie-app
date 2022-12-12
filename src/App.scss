@@ -71,8 +71,7 @@ sideNav{
   width: 230px;     
   z-index: 1;      
   top: 0.1;      
-  background-color: #0f1115; 
-  overflow-x: hidden;     
+  background-color: #0f1115;    
 }
 
 .side-ul{
@@ -99,7 +98,15 @@ sideNav{
 }
 
 /* MOVIE LIST */
+.title1{
+  padding-right: 10px;
+}
+.col1{
+  color: white;
+}
+
 movie{
+  padding:2rem;
   border-top-left-radius: 30px;
   z-index: 1;   
   position: fixed;     
