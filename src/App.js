@@ -1,8 +1,10 @@
-import './App.scss';
+import './styles/App.scss';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import MovieList from './MovieList';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect } from 'react';
+
 
 const App = () => {
   const [movies,setMovies] = useState([ ]);
