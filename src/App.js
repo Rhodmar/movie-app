@@ -1,4 +1,4 @@
-import './App.scss';
+import './styles/App.scss';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import MovieList from './MovieList';
@@ -10,7 +10,7 @@ const App = () => {
   const [movies2,setMovies2] = useState([ ]);
 
   const getMovieRequest = async () => {
-    const url = 'http://www.omdbapi.com/?s=avengers&apikey=5761f58';
+    const url = 'http://www.omdbapi.com/?s=barbie&apikey=5761f58';
 
     const response = await fetch(url);
     const responseJson = await response.json();
